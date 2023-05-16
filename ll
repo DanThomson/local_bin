@@ -12,7 +12,6 @@
 # --group-directories-first  # Directories first
 # --human-readable           # Print sizes like 1K 234M 2G etc.
 # --color=auto               # Let ls decide when to use color
-# -v                         # Natural sort by version numbers
 # --hide="*.pyc"             # Hide is like ignore, but overridden by -a or -A
 #
 # time can be any of the following:
