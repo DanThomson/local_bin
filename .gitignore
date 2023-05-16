@@ -1,0 +1,17 @@
+# By default all files will be ignored
+# Patterns prefixed with an "!" are "unignored" aka "unhidden"
+/*
+
+!.gitignore
+!.github
+
+!d
+!dt
+!g
+!la
+!laa
+!ll
+!pwdcp
+!rsync-it
+!scs
+!v
