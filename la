@@ -1,0 +1,21 @@
+#! /usr/bin/dash
+# vim: ft=bash
+
+# Like ll but with:
+# --almost-all
+# Almost all excludes implicit "." & ".."
+
+exec ls \
+    -o \
+    -v \
+    --indicator-style=slash \
+    --file-type \
+    --classify=always \
+    --group-directories-first \
+    --human-readable \
+    --color=auto \
+    --time=mtime \
+    --hide="*.pyc" \
+    --time-style=iso \
+    --almost-all \
+    "$@"

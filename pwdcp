@@ -1,0 +1,7 @@
+#! /usr/bin/dash
+# vim: ft=bash
+
+# Only works with wayland running
+# and wl-clipboard installed
+
+exec pwd | wl-copy && echo `pwd` copied

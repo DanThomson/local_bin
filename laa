@@ -1,0 +1,21 @@
+#! /usr/bin/dash
+# vim: ft=bash
+
+# laa - like la but exclude files shown by ll
+# i.e. Just the hidden files
+
+exec ls \
+    -o \
+    -v \
+    --indicator-style=slash \
+    --file-type \
+    --classify=always \
+    --group-directories-first \
+    --human-readable \
+    --color=auto \
+    --time=mtime \
+    --hide="*.pyc" \
+    --time-style=iso \
+    --almost-all \
+    --ignore='[!.]*' \
+    "$@"

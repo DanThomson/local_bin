@@ -1,0 +1,4 @@
+#! /usr/bin/dash
+# vim: ft=bash
+
+exec systemctl status "$@"

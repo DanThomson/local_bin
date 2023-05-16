@@ -1,0 +1,5 @@
+#! /usr/bin/dash
+# vim: ft=bash
+
+# date time
+exec date '+%Y-%m-%dT%H-%M%Z'
