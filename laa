@@ -1,7 +1,8 @@
 #! /usr/bin/dash
 # vim: ft=bash
 
-# laa - like la but exclude files shown by ll
+# laa - like la
+# but exclude files shown by ll
 # i.e. Just the hidden files
 
 exec ls \

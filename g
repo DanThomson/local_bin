@@ -3,7 +3,7 @@
 
 # g - grep with desired options
 # Shorter better. Now with longer runtime! :-(
-exec "grep recursive --line-number --color=auto -I $@"
+exec grep --recursive --line-number --color=auto -I "$@"
 
 # Other grep options which have been useful
 # --exclude=\*.html
