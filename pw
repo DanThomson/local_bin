@@ -1,0 +1,10 @@
+#! /usr/bin/env dash
+# vim: ft=bash
+
+
+# Process Watch
+#   - grep ps output for $1
+#   - remove the process for grep
+
+
+exec ps aux | grep $1 | grep -v grep;

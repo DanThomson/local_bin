@@ -1,0 +1,10 @@
+#! /usr/bin/env bash
+#
+# Execute this as a non-root user.
+# You may have to change either the ownership or the permissions
+# of `/usr/local/src`
+
+cd /usr/local/src
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
