@@ -9,6 +9,7 @@
 !dt
 !g
 !get-yay
+!hide
 !la
 !laa
 !ll
@@ -16,4 +17,5 @@
 !pwdcp
 !rsync-it
 !scs
+!unhide
 !v
