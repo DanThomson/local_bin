@@ -4,11 +4,11 @@
 # unhide - each parameter is treated as a path to a filesystem object.
 # Each fso is moved from .<name> to <name>
 
-while [[ -n "${1}" ]]; do
+while [[ -n "$1" ]]; do
     # Check for existence
     if [[ -e  "$1" ]]; then
-        echo mv "${1}" `echo "${1}" | sed -e 's/^.//'`
-        mv "${1}" `echo "${1}" | sed -e 's/^.//'`
+        echo mv "$1" `echo "$1" | sed -e 's/^.//'`
+        mv "$1" `echo "$1" | sed -e 's/^.//'`
     else
         1>&2 echo "\"$1\" does not exist. It failed [[ -e \"$1\" ]]"
     fi

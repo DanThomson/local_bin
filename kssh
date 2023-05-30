@@ -1,2 +1,18 @@
 #! /usr/bin/dash
-exec kitty +kitten ssh $@
+#
+# Based on:
+# https://sw.kovidgoyal.net/kitty/faq/#i-get-errors-about-the-terminal-being-unknown-or-opening-the-terminal-failing-or-functional-keys-like-arrow-keys-don-t-work
+
+if test -z "$TERM"; then
+    echo 'Terminal type must be set in TERM to use kssh'
+    echo 'TERM is currently empty or unset'
+    exit 1
+fi
+
+if test "$TERM" != 'xterm-kitty'; then
+    echo 'TERM must be "xterm-kitty" to use kssh'
+    echo "TERM is currently \"$TERM\""
+    exit 2
+fi
+
+exec kitty +kitten ssh "$@"

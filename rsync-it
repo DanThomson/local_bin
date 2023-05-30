@@ -2,5 +2,14 @@
 # vim: ft=bash
 
 # rysnc with Dan's desired options
-exec rsync --quiet --archive --acls --xattrs --atimes --crtimes --hard-links --delete "$@"
+exec rsync       \
+    --quiet      \
+    --archive    \
+    --acls       \
+    --xattrs     \
+    --atimes     \
+    --crtimes    \
+    --hard-links \
+    --delete     \
+    "$@"
 
