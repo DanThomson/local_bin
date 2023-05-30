@@ -12,3 +12,5 @@ git checkout -b trunk --track origin/trunk
 
 git reset origin/trunk
 ```
+
+## [License](LICENSE)
