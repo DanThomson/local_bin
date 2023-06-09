@@ -1,0 +1,12 @@
+#! /usr/bin/dash
+
+# Start chrome with debugging port so that it can be reloaded from a command in vim
+# TODO: rename or relocate this file
+
+# TODO: Replace this with parameter or envvar
+URL=http://localhost:4000/shorts/svg.html
+
+# TODO: Move this to /tmp
+USER_DATA_DIR="$HOME"/dev-mode-removeme
+
+/usr/bin/google-chrome-stable --remote-debugging-address=127.0.0.1  --remote-debugging-port=9222 --user-data-dir=$USER_DATA_DIR --disk-cache-dir=null --overscroll-history-navigation=0 $URL

@@ -1,0 +1,8 @@
+#! /usr/bin/dash
+
+# TODO: rename or relocate this file
+
+WS=`curl -s http://127.0.0.1:9222/json | jq -r ".[0].webSocketDebuggerUrl"`
+RELOAD_CMD='{"id":2,"method":"Page.reload","params":{"ignoreCache":true,"scriptToEvaluateOnLoad":""}}'
+
+echo $RELOAD_CMD | websocat $WS

@@ -20,3 +20,6 @@
 !scs
 !unhide
 !v
+
+!reload
+!start-chrome-dev-tool
